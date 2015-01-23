@@ -1,1 +1,1 @@
-web: gunicorn hotplate-minecraft:app --log-file=-
+web: gunicorn hotplate_minecraft:app --log-file=-
