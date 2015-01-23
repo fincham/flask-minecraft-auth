@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Log in</h1>
+    <form action="" method="post" name="login">
+        {{ form.hidden_tag() }}
+        <p>
+            Minecraft username:<br>
+            {{ form.username }}<br>
+        </p>
+        <p>
+            Password:<br>
+            {{ form.password }}<br>
+        </p>        
+        <p>{{ form.remember_me }} Remember me</p>
+        <p><input type="submit" value="Log in"></p>
+    </form>
+{% endblock %}
